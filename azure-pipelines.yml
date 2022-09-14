@@ -8,7 +8,7 @@ trigger:
 - master
 
 variables:
-  -group: varsprueba
+- group: varsprueba
 
 pool:
   vmImage: ubuntu-latest
@@ -34,8 +34,7 @@ steps:
     script: |
       # Write your commands here
       
-      echo 'Hello world'
-      echo "var from library: $(ddx)"
+      echo 'var from library: $(ddx)'
 
 - script: |
     python -m pip install --upgrade pip
